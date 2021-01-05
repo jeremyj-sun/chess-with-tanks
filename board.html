@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<!-- Desktop only. Canvas does not load on mobile -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Chess...But With Tanks!</title>
+        <link rel="stylesheet" type="text/css" href="./styles.css">
+        <link rel="shortcut icon" href="./favicon-sun.ico" type="image/x-icon" />
+        <!-- Jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    
+    <body>
+ 
+        <!-- this is the game board and needs to fit in the center of any screen -->
+        <!-- size artboard to 700 px x 700 px -->
+        <!-- White pieces -->
+        <canvas id='board' style='position:absolute;'></canvas>
+        <img id="wKG" src="assets/wKG.svg" style="display: none" />
+        <img id="wQG" src="assets/wQG.svg" style="display: none" />
+        <img id="wBG" src="assets/wBG.svg" style="display: none" />
+        <img id="wNG" src="assets/wNG.svg" style="display: none" />
+        <img id="wRG" src="assets/wRG.svg" style="display: none" />
+        <img id="wPG" src="assets/wPG.svg" style="display: none" />
+
+        <!-- Black pieces -->
+        <img id="bKG" src="assets/bKG.svg" style="display: none" />  
+        <img id="bQG" src="assets/bQG.svg" style="display: none" />
+        <img id="bBG" src="assets/bBG.svg" style="display: none" />
+        <img id="bNG" src="assets/bNG.svg" style="display: none" />
+        <img id="bRG" src="assets/bRG.svg" style="display: none" />
+        <img id="bPG" src="assets/bPG.svg" style="display: none" />
+
+        <!-- Loader -->
+        <div class='loader-wrapper'>
+            <figure>
+                <img src='./assets/sun-loader.svg' id='loader'/>
+                <figcaption id='loaderCaption'>Loading...</figcaption>
+            </figure>
+        </div>
+
+        <div id='mobile-message'>
+            <b>Please load the game on a wider device.</b>
+        </div>
+
+        <script type="module" src="src/chessMain.js"></script>
+    </body> 
+</html>

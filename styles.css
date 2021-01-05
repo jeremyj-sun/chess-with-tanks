@@ -1,0 +1,126 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    border: 0;
+    background-color: #838383;
+    display: block; 
+}
+
+  /* fadein animation */
+  .fadein {
+      animation: fadeIn ease 3s;
+      -webkit-animation: fadeIn ease 3s;
+      -moz-animation: fadeIn ease 3s;
+      -o-animation: fadeIn ease 3s;
+      -ms-animation: fadeIn ease 3s;
+      }
+      @keyframes fadeIn {
+      0% {opacity:0;}
+      100% {opacity:1;}
+      }
+      
+      @-moz-keyframes fadeIn {
+      0% {opacity:0;}
+      100% {opacity:1;}
+      }
+      
+      @-webkit-keyframes fadeIn {
+      0% {opacity:0;}
+      100% {opacity:1;}
+      }
+      
+      @-o-keyframes fadeIn {
+      0% {opacity:0;}
+      100% {opacity:1;}
+      }
+      
+      @-ms-keyframes fadeIn {
+      0% {opacity:0;}
+      100% {opacity:1;}
+      }
+
+  /* fadeout animation */
+  .fadeout {
+      animation: fadeOut ease 2s;
+      -webkit-animation: fadeOut ease 2s;
+      -moz-animation: fadeOut ease 2s;
+      -o-animation: fadeOut ease 2s;
+      -ms-animation: fadeOut ease 2s;
+  }
+
+  @keyframes fadeOut {
+      0% {opacity:1;}
+      100% {opacity:0;}
+      }
+      
+      @-moz-keyframes fadeOut {
+      0% {opacity:1;}
+      100% {opacity:0;}
+      }
+      
+      @-webkit-keyframes fadeOut {
+      0% {opacity:1;}
+      100% {opacity:0;}
+      }
+      
+      @-o-keyframes fadeOut {
+      0% {opacity:1;}
+      100% {opacity:0;}
+      }
+      
+      @-ms-keyframes fadeOut {
+      0% {opacity:1;}
+      100% {opacity:0;}
+      }
+
+
+  /* Loader animation */
+  .loader-wrapper {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #247ca5
+  }
+
+  #loader {
+  position: absolute;
+  top: calc(50% - 6em);
+  left: calc(50% - 6em);
+  width: 12em;
+  height: 12em;
+  animation: spin 1.1s infinite linear;
+  animation-fill-mode: forwards;
+  transition: opacity 0.3s;
+  }
+
+  @keyframes spin {
+      0% {
+          transform: rotate(0deg);
+      }
+      100% {
+          transform: rotate(360deg);
+      }
+  }
+
+  #loaderCaption {
+      position: absolute;
+      font-size: 2em;
+      font-family: 'Comic Neue', cursive;
+      color: #FFFFFF;
+      top: calc(69% - 1em);
+      left: calc(50% - 2em);
+  }
+
+  @media screen and (max-width: 475px) {
+      .loader-wrapper {
+          display: none;
+      }
+      #mobile-message {
+          margin-top: 5rem;
+          text-align: center;
+          font-size: large;
+      }
+  }
