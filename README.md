@@ -1,3 +1,5 @@
+# Chess with Tanks
+
 A mobile-compatible online chess game for PvP built with HTML, CSS, and JavaScript.
 
 Tanks assets for chess pieces made with Adobe Illustrator
