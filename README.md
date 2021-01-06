@@ -12,7 +12,7 @@ Move pieces by clicking on the piece, followed by the destination square.
 To deselect a piece, click the highlighted piece again. 
 [Click here for rules](https://en.wikipedia.org/wiki/Rules_of_chess).
 
-![tank](https://raw.githubusercontent.com/jeremyj-sun/chess-with-tanks/main/assets/bBG.svg)
+![tank](https://raw.githubusercontent.com/jeremyj-sun/chess-with-tanks/main/assets/bBG.svg =100x100)
 
 ### In progress:
 - Verification logic for all chess rules will be implemented in chessEngine.js.
