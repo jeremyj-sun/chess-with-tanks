@@ -12,9 +12,14 @@ Move pieces by clicking on the piece, followed by the destination square.
 To deselect a piece, click the highlighted piece again. 
 [Click here for rules](https://en.wikipedia.org/wiki/Rules_of_chess).
 
-![tank](https://raw.githubusercontent.com/jeremyj-sun/chess-with-tanks/main/assets/bBG.svg)
-
-<img src="https://raw.githubusercontent.com/jeremyj-sun/chess-with-tanks/main/assets/bBG.svg" alt="tank" width="200"/>
+| Icon | Piece | Tank |
+|:---:|:---:|:---:|
+|<img src="https://raw.githubusercontent.com/jeremyj-sun/chess-with-tanks/main/assets/bPG.svg" alt="tank" width="200"/>| Pawn | *Panzer II Ausf. L* |
+|<img src="https://raw.githubusercontent.com/jeremyj-sun/chess-with-tanks/main/assets/bNG.svg" alt="tank" width="200"/>   | Knight   | *Panzer IV Ausf. H*  |
+|<img src="https://raw.githubusercontent.com/jeremyj-sun/chess-with-tanks/main/assets/bBG.svg" alt="tank" width="200"/>   | Bishop   | *Panther Ausf. D*  |
+|<img src="https://raw.githubusercontent.com/jeremyj-sun/chess-with-tanks/main/assets/bRG.svg" alt="tank" width="200"/>   | Rook   | *Jagdtiger Ausf. B* |
+|<img src="https://raw.githubusercontent.com/jeremyj-sun/chess-with-tanks/main/assets/bQG.svg" alt="tank" width="200"/>   | Queen  | *Tiger Ausf. E*  |
+|<img src="https://raw.githubusercontent.com/jeremyj-sun/chess-with-tanks/main/assets/bKG.svg" alt="tank" width="200"/>   | King   | *Königstiger II Ausf. B* | 
 
 ### In progress:
 - Verification logic for all chess rules will be implemented in chessEngine.js.
