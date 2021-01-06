@@ -7,12 +7,12 @@ Tanks assets for chess pieces made with Adobe Illustrator
 
 Graphics and UI implemented with board.html and chessMain.js. Game state tracked in chessEngine.js. 
 
-## Controls and Rules
+### Controls and Rules
 Move pieces by clicking on the piece, followed by the destination square.
 To deselect a piece, click the highlighted piece again. 
 [Click here for rules](https://en.wikipedia.org/wiki/Rules_of_chess).
 
-In progress:
+### In progress:
 - Verification logic for all chess rules will be implemented in chessEngine.js.
 - Sound effects for selecting, moving, and capturing pieces.
 - Russian tank assets
