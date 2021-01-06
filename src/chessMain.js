@@ -66,10 +66,6 @@ ctx.stroke();
 ctx.drawImage(img, 10, 10, 100, 100)
 */
 
-//Highlighting of pieces - CONTINUE HERE!!!
-//Remark: changing CSS of the image does not get applied to the canvas :(
-// May need to make new "Highlighted" assets and then mutate the piece variables
-// to the ID of the highlighted asset. 
 function highLight(square, gs) {
     if (gs.board[square.row][square.col] != "--") {
         gs.selected = square;
@@ -228,7 +224,7 @@ function drawBoard(ctx) {
 
 //Draw chess pieces (tanks)
 function drawPieces(ctx, gs) { 
-    //CONTINUE HERE: TO DO: 1. make assets (Germany, Russia, USA), Both white and black 
+    //TO DO: 1. make assets (Germany, Russia, USA), Both white and black 
     // 2. UI: White Selects Country, Black selects country -> loads the appropriate set of pieces -> loads board colors depending on nation combinations
     // 3. implement draw pieces function that parses gs.board to generate a board
     for (let row = 0; row < DIMENSION; row++) {
@@ -261,8 +257,3 @@ function drawPieces(ctx, gs) {
         }
     }
 }
-
-//Other controls: 
-//Add piece sound effect when moving a piece. 
-//Graphics to highlight valid moves when selecting a piece
-

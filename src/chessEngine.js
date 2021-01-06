@@ -47,6 +47,7 @@ export default class GameState {
         //Enforce castle 
 
         //Enforce turns
+        
         if (this.board[move.startRow][move.startCol].charAt(0) === 'w' && !this.whiteToMove) {
             alert("It is Black's move!");
             return;
@@ -54,6 +55,7 @@ export default class GameState {
             alert("It is White's move!");
             return;
         }
+        
 
         //Enforce valid captures
         if (this.board[move.startRow][move.startCol] != "--" && this.board[move.startRow][move.startCol].charAt(0) === this.board[move.endRow][move.endCol].charAt(0)) {
